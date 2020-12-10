@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linking file to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Linking file to JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+</head>
+
+<body>
+    <!--Creating a responsive Navbar, the Navbar is fixed on the top of the page-->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <!--Using container-fluid for a full width container-->
+    <div class="container-fluid">
+        <!--The navbar is hidden on small screens and replaced by a button in the top right corner -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+        <a class="navbar-brand" href="/index.html">Saadia El Fekak</a>
+      </div>
+      <!--Creating an Id for the tabs to use it in the button -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+     <!-- Adding tabs with icons using relative links-->
+        <li><a href="/portfolio.html"> <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>  Portfolio </a></li>
+        <li class="active"><a href="/contact.html"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>   Contact </a></li>
+        <li><a href="/index.html"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span>  About me </a></li>
+      </ul>
+    </div>
+    </div>
+
+  </nav>
+
+    
+</body>
+</html>

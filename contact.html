@@ -73,9 +73,12 @@ container-fluid occupy the full width of the page-->
 <!--Creating a Panel body-->       
         <div class="panel-body">
 
+<!--Creating a form-->             
           <form>
 
-              <div class="form-row">
+<!--Creating a row that hold two columns--> 
+<!--Each column contains a label and a text form -->   
+            <div class="form-row">
 
                   <div class=" form-group col-xs-6">
                       <label for="InputFirstName">Firt name</label>
@@ -87,19 +90,21 @@ container-fluid occupy the full width of the page-->
                       <input type="text" class="form-control" id="InputLastName" placeholder="Last name">
                   </div>
 
-              </div>
+            </div>
            
-
-              <div class="form-group">
+<!--Creating a form for email if the email is incomplete a message is shown -->   
+            <div class="form-group">
                       <label for="InputEmail">Email</label>
-                      <input type="email" class="form-control" id="eInputEmail" placeholder="Email">
-              </div>
-              
-              <div class="form-group">
-                      <label for="InputMessage">Message</label>
-                      <textarea class="form-control" id="InputMessage" rows="4"></textarea>
-              </div>
+                      <input type="email" class="form-control" id="eInputEmail" placeholder="example@email.com" >
+            </div>
 
+<!--Creating a form for text. The maximum rows number is 4 -->               
+            <div class="form-group">
+                      <label for="InputMessage">Message</label>
+                      <textarea class="form-control" id="InputMessage" rows="4" placeholder="Message"></textarea>
+            </div>
+
+<!--Creating submit button-->              
             <button type="submit" class="btn btn-primary">Submit</button>
           
           </form>
@@ -108,7 +113,7 @@ container-fluid occupy the full width of the page-->
     </div>
 </main>
 <!--Footer-->
-<footer>
+<footer class="row">
   
   <h5 class="text-center text-muted"> SEF © Copyright </h5>
 

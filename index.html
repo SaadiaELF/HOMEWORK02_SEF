@@ -16,9 +16,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         
 </head>
+
+<!--Creating a background image in the body tag-->
 <body  style="background-image: url('assets/pexels-pixabay-235994.jpg')">
+
+<!--Creating a container to hold the body of the page (header main and footer tags will be in rows)
+container-fluid occupy the full width of the page-->  
   <div class="container-fluid">
-  <header class="row-fluid ">
+  <header class="row-fluid">
 
     <!--Creating a responsive Navbar, the Navbar is fixed on the top of the page-->
     <nav class="navbar navbar-default navbar-inverse">  
@@ -49,17 +54,23 @@
     </nav>
 </header>
 
-<main class="row-fluid">
-  
+<main class="row">
+  <!--Creating a Panel that take 8 of 12 of the screen-->
     <div class="col-xs-8">
 
       <div class="panel panel-default">
 
+  <!--Creating a Panel heading/title-->      
         <div class="panel-heading">
           <h3 class="panel-title" id="custom_style">About me</h3>
         </div>
 
+  <!--Creating a Panel body-->       
         <div class="panel-body">
+
+  <!--The panel body contains an image and a paragraph.-->
+  <!--The image is in a thumbnail and it's floating in the left of the panel body.-->
+  <!--The size of image is adjusted by max-width class-->        
           <img  id ="My_photo" src="/assets/photo.JPG" class="img-thumbnail float-left pull-left mr-2" style="max-width:30%" alt="My photo">
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in geometria, prima si dederis, danda sunt omnia. Quis suae urbis conservatorem Codrum, quis Erechthei filias non maxime laudat? Totum genus hoc Zeno et qui ab eo sunt aut non potuerunt aut noluerunt, certe reliquerunt. Quis istud, quaeso, nesciebat? Duo Reges: constructio interrete. <i>Primum quid tu dicis breve?</i> <i>Quibusnam praeteritis?</i> Quae fere omnia appellantur uno ingenii nomine, easque virtutes qui habent, ingeniosi vocantur. Itaque mihi non satis videmini considerare quod iter sit naturae quaeque progressio.</p>
         </div>
@@ -72,7 +83,7 @@
 </main>
 
 <!--Footer-->
-<footer>
+<footer class="row">
   
   <h5 class="text-center text-muted"> SEF © Copyright </h5>
 

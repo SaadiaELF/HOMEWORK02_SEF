@@ -4,22 +4,31 @@
     <title>Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Linking file to Bootstrap-->
+
+<!--Linking file to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!--Linking file to CSS file-->
+     
+<!--Linking file to CSS file-->
     <link rel="stylesheet" href="assets/style.css">
-    <!--Linking file to Google fonts-->
+    
+<!--Linking file to Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet"> 
-    <!--Linking file to JQuery-->
+    
+<!--Linking file to JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         
 </head>
-<body  style="background-image: url('assets/pexels-pixabay-235994.jpg')">
-  <div class="container-fluid">
-  <header class="row-fluid ">
 
+<!--Creating a background image in the body tag-->
+<body  style="background-image: url('assets/pexels-pixabay-235994.jpg')">
+
+<!--Creating a container to hold the body of the page (header main and footer tags will be in rows)
+container-fluid occupy the full width of the page-->  
+  <div class="container-fluid">
+
+  <header class="row-fluid">
 
     <!--Creating a responsive Navbar, the Navbar is fixed on the top of the page-->
     <nav class="navbar navbar-default navbar-inverse">  
@@ -51,9 +60,39 @@
     </nav>
 </header>
 
+<main class="row">
+
+ <!--Creating a Panel that take 8 of 12 of the screen-->
+      <div id="Portfolio" class="col-xs-8">
+  
+        <div class="panel panel-default">
+  
+  <!--Creating a Panel heading/title-->      
+          <div class="panel-heading">
+            <h3 class="panel-title" id="custom_style">Portfolio</h3>
+          </div>
+  
+  <!--Creating a Panel body-->       
+          <div class="panel-body">
+  
+  <!--The panel body contains images-->
+  <!--The size of image is adjusted by max-width class--> 
+
+            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%" alt="Portfolio01">
+            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%" alt="Portfolio02">
+            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%" alt="Portfolio03">
+            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%" alt="Portfolio04">
+            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%" alt="Portfolio05">
+            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%" alt="Portfolio06">
+         
+          </div>
+  
+        </div>
+      </div>
+  </main>
 
 <!--Footer-->
-<footer>
+<footer class="row">
   
   <h5 class="text-center text-muted"> SEF © Copyright </h5>
 

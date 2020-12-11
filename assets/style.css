@@ -9,11 +9,14 @@ html *{
 
 #My_photo {
     margin-right: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 p {
     font-size: 18px;
-}
+ }
 
 footer {
     position: fixed;
@@ -25,3 +28,11 @@ footer {
     border-top-width: 5px;
     border-style: solid;
   }
+
+  #Portfolio {
+      margin-bottom: 40px;
+  }
+  img {
+    margin: 10px;
+  }
+

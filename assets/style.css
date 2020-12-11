@@ -4,7 +4,7 @@ html *{
 #custom_style {
     font-size: 30px;
     font-weight: bolder;
-    color: rgb(10, 19, 102);
+    color: rgb(143, 137, 145);
 }
 
 #My_photo {
@@ -14,3 +14,14 @@ html *{
 p {
     font-size: 18px;
 }
+
+footer {
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    border-top:  rgb(165, 162, 167);
+    border-top-width: 5px;
+    border-style: solid;
+  }

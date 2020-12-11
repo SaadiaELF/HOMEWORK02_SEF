@@ -4,26 +4,36 @@
     <title>Contact</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Linking file to Bootstrap-->
+    
+<!--Linking file to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!--Linking file to CSS file-->
+     
+<!--Linking file to CSS file-->
     <link rel="stylesheet" href="assets/style.css">
-    <!--Linking file to Google fonts-->
+    
+<!--Linking file to Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet"> 
-    <!--Linking file to JQuery-->
+    
+<!--Linking file to JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         
 </head>
-<body  style="background-image: url('assets/pexels-pixabay-235994.jpg')">
-  <div class="container-fluid">
-  <header class="row-fluid ">
 
-    <!--Creating a responsive Navbar, the Navbar is fixed on the top of the page-->
+<!--Creating a background image in the body tag-->
+<body  style="background-image: url('assets/pexels-pixabay-235994.jpg')">
+
+<!--Creating a container to hold the body of the page (header main and footer tags will be in rows)
+container-fluid occupy the full width of the page-->  
+  <div class="container-fluid">
+
+  <header class="row-fluid">
+
+<!--Creating a responsive Navbar, the Navbar is fixed on the top of the page-->
     <nav class="navbar navbar-default navbar-inverse">  
 
-        <!--The navbar is hidden on small screens and replaced by a button in the top right corner -->
+<!--The navbar is hidden on small screens and replaced by a button in the top right corner -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
@@ -33,23 +43,70 @@
                     <a class="navbar-brand" href="/index.html">Saadia El Fekak</a>
             </div>
 
-        <!--Creating an Id for the tabs to use it in the button -->
+<!--Creating an Id for the tabs to use it in the button -->
             <div class="collapse navbar-collapse" id="myNavbar">
 
-        <!--floating the navbar to right-->
+<!--floating the navbar to right-->
                 <ul class="nav navbar-nav navbar-right">
 
-        <!-- Adding tabs with icons using relative links-->
+<!-- Adding tabs with icons using relative links-->
                     <li><a href="/portfolio.html"> <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>  Portfolio </a></li>
                     <li class="active"><a href="/contact.html"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>   Contact </a></li>
                     <li><a href="/index.html"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span>  About me </a></li>
                 </ul>
 
             </div>
-
     </nav>
 </header>
 
+<main class="row">
+<!--Creating a Panel that take 8 of 12 of the screen-->
+    <div class="col-xs-8 col-md-6">
+
+      <div class="panel panel-default">
+
+<!--Creating a Panel heading/title-->      
+        <div class="panel-heading">
+          <h3 class="panel-title" id="custom_style">Contact</h3>
+        </div>
+
+<!--Creating a Panel body-->       
+        <div class="panel-body">
+
+          <form>
+
+              <div class="form-row">
+
+                  <div class=" form-group col-xs-6">
+                      <label for="InputFirstName">Firt name</label>
+                      <input type="text" class="form-control" id="InputFirstName" placeholder="First name">
+                  </div>
+
+                  <div class="form-group col-xs-6">
+                      <label for="InputLastName">Last name</label>
+                      <input type="text" class="form-control" id="InputLastName" placeholder="Last name">
+                  </div>
+
+              </div>
+           
+
+              <div class="form-group">
+                      <label for="InputEmail">Email</label>
+                      <input type="email" class="form-control" id="eInputEmail" placeholder="Email">
+              </div>
+              
+              <div class="form-group">
+                      <label for="InputMessage">Message</label>
+                      <textarea class="form-control" id="InputMessage" rows="4"></textarea>
+              </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          
+          </form>
+
+      </div>
+    </div>
+</main>
 <!--Footer-->
 <footer>
   

@@ -4,7 +4,7 @@ html *{
     font-family:"Andika New Basic" ;}
 
 /** Applying a personalised style for the panel heading: changing the size and weight of the font and the colour **/    
-#custom_style {
+.custom_style {
     font-size: 30px;
     font-weight: bolder;
     color: rgb(143, 137, 145);

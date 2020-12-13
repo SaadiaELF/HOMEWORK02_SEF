@@ -3,7 +3,7 @@
 html *{
     font-family:"Andika New Basic" ;}
 
-/** Applying a personalised style for the panel title : changing the size and weight of the font and the colour **/    
+/** Applying a personalised style for the panel heading: changing the size and weight of the font and the colour **/    
 #custom_style {
     font-size: 30px;
     font-weight: bolder;
@@ -44,6 +44,10 @@ footer {
       margin-bottom: 40px;
   }
 
+/** Adding a margin in the bottom of Contact me panel **/    
+  #ContactMe {
+    margin-bottom: 40px;
+}
 /** Adding a margin for placeholder images **/    
   img {
     margin: 10px;

@@ -88,9 +88,9 @@ This file is used to personalise the styles by creating new classes and id.
 
     * Laptop size screen screenshots : 
     
-![About me](./assets/Screenshots/screenshot-laptop01.jpg)
-![Portfolio](./assets/Screenshots/screenshot-laptop02.jpg)    
-![Contact](./assets/Screenshots/screenshot-laptop03.jpg)
+![About me](./assets/Screenshots/screenshot-laptop01.JPG)
+![Portfolio](./assets/Screenshots/screenshot-laptop02.JPG)    
+![Contact](./assets/Screenshots/screenshot-laptop03.JPG)
 
 -----------------------------------------------------------------------------------------------------------------------
 

@@ -1,133 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Homepage</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--Linking file to Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     
-<!--Linking file to CSS file-->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    
-<!--Linking file to Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet"> 
-    
-<!--Linking file to JQuery-->
-<!--This script is used to make the button of the navigation bar dynamic-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        
+<head>
+  <title>Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Linking file to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!--Linking file to CSS file-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--Linking file to Google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+
+  <!--Linking file to JQuery-->
+  <!--This script is used to make the button of the navigation bar dynamic-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <!--Creating a background image in the body tag-->
-<body  style="background-image: url('assets/images/pexels-pixabay-235994.jpg')">
 
-<!--Creating a container to hold the body of the page (header main and footer tags will be in rows)
-container-fluid occupy the full width of the page-->  
+<body>
+
+  <!--Creating a container to hold the body of the page (header main and footer tags will be in rows)
+container-fluid occupy the full width of the page-->
   <div class="container-fluid">
-
-  <header class="row-fluid">
-
-<!--Creating a responsive Navbar, the Navbar is fixed on the top of the page-->
-    <nav class="navbar navbar-default navbar-inverse">  
-
-<!--The navbar is hidden on small screens and replaced by a button in the top right corner -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
-                    <a class="navbar-brand" href="./index.html">Saadia El Fekak</a>
-            </div>
-
-<!--Creating an Id for the tabs to use it in the button -->
-            <div class="collapse navbar-collapse" id="myNavbar">
-
-<!--floating the navbar to right-->
-                <ul class="nav navbar-nav navbar-right">
-
-<!-- Adding tabs with icons using relative links-->
-                    <li><a href="./portfolio.html"> <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>  Portfolio </a></li>
-                    <li><a href="./contact.html"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>   Contact </a></li>
-                    <li class="active"><a href="./index.html"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span>  About me </a></li>
-                </ul>
-
-            </div>
-    </nav>
-</header>
-
-<main class="row">
-<!--Creating a Panel that take full screen in small screen and 10 of 12 of the screen in medium screen and bellow-->
-    <div class="col-xs col-md-10">
-
-      <div class="panel panel-default">
-
-<!--Creating a Panel heading/title-->      
-        <div class="panel-heading">
-          <h3 class="panel-title custom_style">About me</h3>
+    <header class="row-fluid">
+      <!--Creating a responsive Navbar, the Navbar is fixed on the top of the page-->
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <!--The navbar is hidden on small screens and replaced by a button in the top right corner -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">Saadia El Fekak</a>
         </div>
+        <!--Creating an Id for the tabs to use it in the button -->
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <!--floating the navbar to right-->
+          <ul class="nav navbar-nav navbar-right">
+            <!-- Adding tabs with icons using relative links-->
+            <li><a href="./portfolio.html"> <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+                Portfolio </a></li>
+            <li><a href="./contact.html"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact
+              </a></li>
+            <li class="active"><a href="./index.html"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                About me </a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-<!--Creating a Panel body-->       
-        <div class="panel-body">
-
-<!--The panel body contains an image and a paragraph.-->
-<!--The image is in a thumbnail and it's floating in the left of the panel body.-->
-<!--The size of image is adjusted by max-width class-->        
-          <img  id ="My_photo" src="./assets/images/photo.JPG" class="img-thumbnail float-left pull-left " style="max-width:30%" alt="My photo">
-          <p>Welcome to my portfolio website. 
-            <br>
-            <br>
-            I’m Saadia El Fekak. I am 28-year-old and I‘m from Morocco.
-            <br>
-            <br>
-            I have been living in the UK for a year now!
-            <br>
-            <br>
-            I have a bachelor degree in engineering in Rural engineering. I used to work, back in my country, as a hydraulic engineer. My main duties were: supervising modelers and technicians, evaluating detailed plans, preparing estimates and budgets, creating accurate project specifications, creating technical reports for customers and finally, presenting projects to the costumers.
-            <br>
-            <br>
-            Recently, I have made a crucial decision by changing my career and enrolling a Web development bootcamp in the University of Birmingham.
-             </p>
+    <main class="row">
+      <!--Creating a Panel that take full screen in small screen and 10 of 12 of the screen in medium screen and bellow-->
+      <div class="col-xs col-md-10">
+        <div class="panel panel-default">
+          <!--Creating a Panel heading/title-->
+          <div class="panel-heading">
+            <h3 class="panel-title custom_style">About me</h3>
+          </div>
+          <!--Creating a Panel body-->
+          <div class="panel-body">
+            <!--The panel body contains an image and a paragraph.-->
+            <!--The image is in a thumbnail and it's floating in the left of the panel body.-->
+            <!--The size of image is adjusted by max-width class-->
+            <img id="My_photo" src="./assets/images/photo.JPG" class="img-thumbnail float-left pull-left "
+              style="max-width:30%" alt="My photo">
+            <p>Welcome to my portfolio website.
+              <br>
+              <br>
+              I’m Saadia El Fekak. I am 28-year-old and I‘m from Morocco.
+              <br>
+              <br>
+              I have been living in the UK for a year now!
+              <br>
+              <br>
+              I have a bachelor degree in engineering in Rural engineering. I used to work, back in my country, as a
+              hydraulic engineer. My main duties were: supervising modelers and technicians, evaluating detailed plans,
+              preparing estimates and budgets, creating accurate project specifications, creating technical reports for
+              customers and finally, presenting projects to the costumers.
+              <br>
+              <br>
+              Recently, I have made a crucial decision by changing my career and enrolling a Web development bootcamp in
+              the University of Birmingham.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-</main>
+    </main>
 
-<section id="ContactMe" class="row">
+    <section id="ContactMe" class="row">
+      <div class="col-xs col-md-10">
+        <div class="panel panel-default">
+          <div class="panel-heading custom_style">Contact me </div>
+          <div class="panel-body">
+            <ul>
+              <li> <b>Email : </b> <a href="mailto:saadiaelfekak@gmail.com"> saadiaelfekak@gmail.com </a> </li>
+              <li> <b>Github : </b> <a href="https://github.com/SaadiaELF"> SaadiaELF</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="col-xs col-md-10">
+    <!--Footer-->
+    <footer class="row">
+      <h5 class="text-center text-muted"> SEF © Copyright </h5>
+    </footer>
 
-  <div class="panel panel-default">
-
-    <div class="panel-heading custom_style">Contact me </div>
-
-    <div class="panel-body">
-      
-      <ul>
-        <li> <b>Email : </b> <a href="mailto:saadiaelfekak@gmail.com"> saadiaelfekak@gmail.com </a> </li>
-        <li> <b>Github : </b> <a href="https://github.com/SaadiaELF"> SaadiaELF</a></li>
-      </ul>
-
-    </div>
-
-  </div>
-
-</div>
-
-</section>
-
-<!--Footer-->
-<footer class="row">
-  
-  <h5 class="text-center text-muted"> SEF © Copyright </h5>
-
-</footer>
-    
   </div>
 
 </body>
+
 </html>

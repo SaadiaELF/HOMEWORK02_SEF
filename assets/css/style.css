@@ -1,14 +1,6 @@
 
-/** Applying a personalized font from Google fonts, the font is applied to the whole website**/
 html *{
     font-family:"Andika New Basic" ;}
-
-/** Applying a personalised style for the panel heading: changing the size and weight of the font and the colour **/    
-.custom_style {
-    font-size: 30px;
-    font-weight: bolder;
-    color: rgb(143, 137, 145);
-}
 
 body {
     background-image: url('../images/pexels-pixabay-235994.jpg');
@@ -16,51 +8,43 @@ body {
 }
 .navbar{
     padding-left: 20px;
-    padding-right : 20px
+    padding-right : 20px;
+    border-bottom:  rgb(209, 208, 209);
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+}
+.custom_style {
+    font-size: 20px;
+    font-weight: bold;
 }
 .glyphicon {
     padding-right: 8px;
 }
-
-/** Adding a margin in the right and deleting the top, bottom and left margin to My_photo image **/
 #My_photo {
     margin-right: 10px;
     margin-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-/** Modifying the font size of the paragraphs **/
 p {
     font-size: 18px;
  }
-
-/** Personalising the style of the footer **/ 
 footer {
-/**  Fixing the footer in the bottom of the webpage **/
     position: fixed;
-/**  The space between the bottom edge of the footer and the next ancestor is null **/    
     bottom: 0;
-/** The height of the footer is specified **/
-    height: 50px;
-/** The footer occupy the full width of the screen **/
+    height: 40px;
     width: 100%;
-/** The footer's backgroung colour is black and the top border is solid and grey **/    
     background-color: black;
     border-top:  rgb(165, 162, 167);
     border-top-width: 5px;
-    border-style: solid;
+    border-top-style: solid;
   }
-
-/** Adding a margin in the bottom of Portfolio panel **/  
   #Portfolio {
       margin-bottom: 40px;
   }
-
-/** Adding a margin in the bottom of Contact me panel **/    
   #ContactMe {
     margin-bottom: 40px;
 }
-/** Adding a margin for placeholder images **/    
   img {
     margin: 10px;
   }

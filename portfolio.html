@@ -1,102 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--Linking file to Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     
-<!--Linking file to CSS file-->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    
-<!--Linking file to Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet"> 
-    
-<!--Linking file to JQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        
+<head>
+  <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Linking file to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--Linking file to CSS file-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--Linking file to Google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+
+  <!--Linking file to JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <!--Creating a background image in the body tag-->
-<body  style="background-image: url('assets/images/pexels-pixabay-235994.jpg')">
-
-<!--Creating a container to hold the body of the page (header main and footer tags will be in rows)
-container-fluid occupy the full width of the page-->  
+<body>
+  <!--Creating a container to hold the body of the page (header main and footer tags will be in rows)
+container-fluid occupy the full width of the page-->
   <div class="container-fluid">
-
-  <header class="row-fluid">
-
-    <!--Creating a responsive Navbar, the Navbar is fixed on the top of the page-->
-    <nav class="navbar navbar-default navbar-inverse">  
-
+    <header class="row-fluid">
+      <!--Creating a responsive Navbar, the Navbar is fixed on the top of the page-->
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
         <!--The navbar is hidden on small screens and replaced by a button in the top right corner -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
-                    <a class="navbar-brand" href="./index.html">Saadia El Fekak</a>
-            </div>
-
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">Saadia El Fekak</a>
+        </div>
         <!--Creating an Id for the tabs to use it in the button -->
-            <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <!--floating the navbar to right-->
+          <ul class="nav navbar-nav navbar-right">
+            <!-- Adding tabs with icons using relative links-->
+            <li class="active"><a href="./portfolio.html"> <span class="glyphicon glyphicon-folder-open"
+                  aria-hidden="true"></span> Portfolio </a></li>
+            <li><a href="./contact.html"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact
+              </a></li>
+            <li><a href="./index.html"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span> About me </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-        <!--floating the navbar to right-->
-                <ul class="nav navbar-nav navbar-right">
-
-        <!-- Adding tabs with icons using relative links-->
-                    <li class="active"><a href="./portfolio.html"> <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>  Portfolio </a></li>
-                    <li><a href="./contact.html"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>   Contact </a></li>
-                    <li><a href="./index.html"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span>  About me </a></li>
-                </ul>
-
-            </div>
-
-    </nav>
-</header>
-
-<main class="row">
-
- <!--Creating a Panel that take 8 of 12 of the screen-->
+    <main class="row">
+      <!--Creating a Panel that take 8 of 12 of the screen-->
       <div id="Portfolio" class="col-xs-8">
-  
         <div class="panel panel-default">
-  
-  <!--Creating a Panel heading/title-->      
+          <!--Creating a Panel heading/title-->
           <div class="panel-heading">
             <h3 class="panel-title custom_style">Portfolio</h3>
           </div>
-  
-  <!--Creating a Panel body-->       
+          <!--Creating a Panel body-->
           <div class="panel-body">
-  
-  <!--The panel body contains images-->
-  <!--The size of image is adjusted by max-width class--> 
-
-            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%" alt="Portfolio01">
-            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%" alt="Portfolio02">
-            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%" alt="Portfolio03">
-            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%" alt="Portfolio04">
-            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%" alt="Portfolio05">
-            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%" alt="Portfolio06">
-         
+            <!--The panel body contains images-->
+            <!--The size of image is adjusted by max-width class-->
+            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%"
+              alt="Portfolio01">
+            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%"
+              alt="Portfolio02">
+            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%"
+              alt="Portfolio03">
+            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%"
+              alt="Portfolio04">
+            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%"
+              alt="Portfolio05">
+            <img src="https://via.placeholder.com/350" class="img-thumbnail pull-left " style="max-width:50%"
+              alt="Portfolio06">
           </div>
-  
         </div>
       </div>
-  </main>
+    </main>
 
-<!--Footer-->
-<footer class="row">
-  
-  <h5 class="text-center text-muted"> SEF © Copyright </h5>
-
-</footer>
+    <!--Footer-->
+    <footer class="row">
+      <h5 class="text-center text-muted"> SEF © Copyright </h5>
+    </footer>
   </div>
 </body>
+
 </html>

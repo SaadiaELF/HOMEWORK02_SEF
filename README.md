@@ -6,7 +6,7 @@ Table of content :
 1. The purpose
 2. The methods
 3. HTML files
-4. Bootsrap framework
+4. Bootstrap framework
 5. CSS file
 6. Screenshots
 7. URLs 
@@ -15,7 +15,7 @@ Table of content :
 
 ## 1. The purpose :
 
-The main purpose of this project is to create a responsive portfolio website using Bootsrap.
+The main purpose of this project is to create a responsive portfolio website using Bootstrap.
 
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -25,7 +25,7 @@ The main purpose of this project is to create a responsive portfolio website usi
 
     * HTML files : index.html, contact.html and portfolio.html.
     * CSS file : style.css
-    * Bootsrap CSS framework
+    * Bootstrap CSS framework
     * VS Code
     * Github
     * Google fonts
@@ -36,7 +36,7 @@ The main purpose of this project is to create a responsive portfolio website usi
     
     This files are created according to the standards.
 
-    * Using sementics <header> , <nav> , <main> , <section> and <footer>
+    * Using semantics <header> , <nav> , <main> , <section> and <footer>
     * Using consistently indentation and spacing
     * Validating the HTML files in a validator
     * Using links to link the HTML file to other files and frameworks
@@ -44,11 +44,11 @@ The main purpose of this project is to create a responsive portfolio website usi
 
 -----------------------------------------------------------------------------------------------------------------------
 
-## 4. Bootsrap framework : 
+## 4. Bootstrap framework : 
 
-This open-source framework is used to style the website and make it reponsive. 
+This open-source framework is used to style the website and make it responsive. 
 
-    The main Bootsrap components used in this website are :
+    The main Bootstrap components used in this website are :
 
     * Grid-system : container, rows and columns (.container, .row, .col)
     * Responsive grid: .col-xs .col-md
@@ -62,7 +62,7 @@ This open-source framework is used to style the website and make it reponsive.
 
 ## 5. CSS file : 
 
-This file is used to personalise the styles by creating new classes and id.
+This file is used to personalize the styles by creating new classes and id.
 
     The main CSS properties used in this website are :
     

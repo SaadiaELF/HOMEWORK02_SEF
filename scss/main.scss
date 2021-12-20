@@ -1,18 +1,24 @@
 @import './resets';
+@import './variables';
 
-body {
-    background-image: url('../assets/images/pexels-pixabay-235994.jpg');
-    padding-top: 70px;
+@mixin theme($light-theme : true){
+@if $light-theme {
+background-color: lighten($bg-color, 100%);
+color : darken($text-color, 100%);
 }
+}
+
 .navbar{
+    background-color: $bg-color;
+    color: $text-color;
     padding-left: 20px;
     padding-right : 20px;
-    border-bottom:  rgb(209, 208, 209);
-    border-bottom-width: 5px;
-    border-bottom-style: solid;
+    border-bottom:  $border-color;
+    border-bottom-width: $border-width;
+    border-bottom-style: $border-style;
 }
 
-.custom_style {
+.panel-title {
     font-size: 20px;
     font-weight: bold;
 }
@@ -28,7 +34,6 @@ body {
     margin-bottom: 0px;
 }
 
-
 .placeholder {
     margin: 15px;
     max-width: 300px!important;
@@ -40,6 +45,7 @@ body {
     margin: auto;
     margin-bottom: 10px;
 }
+
 .panel-body{
     max-width: 95%;
     margin: auto;
@@ -50,9 +56,13 @@ footer {
     bottom: 0;
     height: 40px;
     width: 100%;
-    background-color: black;
-    border-top:  rgb(165, 162, 167);
-    border-top-width: 5px;
-    border-top-style: solid;
+    background-color: $bg-color;
+    color: $text-color;
+    border-top:  $border-color;
+    border-top-width: $border-width;
+    border-top-style: $border-style;
   }
 
+.light {
+    @include theme($light-theme:true)
+}

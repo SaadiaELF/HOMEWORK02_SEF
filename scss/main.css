@@ -9,17 +9,20 @@
 body {
   background-image: url("../assets/images/pexels-pixabay-235994.jpg");
   padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .navbar {
+  background-color: black;
+  color: white;
   padding-left: 20px;
   padding-right: 20px;
-  border-bottom: #d1d0d1;
+  border-bottom: #dbd7dd;
   border-bottom-width: 5px;
   border-bottom-style: solid;
 }
 
-.custom_style {
+.panel-title {
   font-size: 20px;
   font-weight: bold;
 }
@@ -57,8 +60,14 @@ footer {
   height: 40px;
   width: 100%;
   background-color: black;
-  border-top: #a5a2a7;
+  color: white;
+  border-top: #dbd7dd;
   border-top-width: 5px;
   border-top-style: solid;
+}
+
+.light {
+  background-color: white;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */

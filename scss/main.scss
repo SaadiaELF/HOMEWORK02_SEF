@@ -1,21 +1,25 @@
-@import './resets';
-@import './variables';
+@import "./resets";
+@import "./variables";
 
-@mixin theme($light-theme : true){
-@if $light-theme {
-background-color: lighten($bg-color, 100%);
-color : darken($text-color, 100%);
-}
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background-color: lighten($bg-color, 95%);
+        color: darken($text-color, 95%);
+        border-color: darken($text-color, 30%);
+    }
 }
 
-.navbar{
+.navbar {
     background-color: $bg-color;
-    color: $text-color;
+    color: $text-color !important;
     padding-left: 20px;
-    padding-right : 20px;
-    border-bottom:  $border-color;
+    padding-right: 20px;
+    border-bottom: $border-color;
     border-bottom-width: $border-width;
     border-bottom-style: $border-style;
+    a {
+        color: white !important;
+    }
 }
 
 .panel-title {
@@ -36,17 +40,20 @@ color : darken($text-color, 100%);
 
 .placeholder {
     margin: 15px;
-    max-width: 300px!important;
-
+    max-width: 300px !important;
 }
-
-.panel{
+.panel-heading {
+    color: $text-color;
+    background-color: $bg-color;
+    border-color: $border-color;
+}
+.panel {
     max-width: 80%;
     margin: auto;
     margin-bottom: 10px;
 }
 
-.panel-body{
+.panel-body {
     max-width: 95%;
     margin: auto;
 }
@@ -58,11 +65,11 @@ footer {
     width: 100%;
     background-color: $bg-color;
     color: $text-color;
-    border-top:  $border-color;
+    border-top: $border-color;
     border-top-width: $border-width;
     border-top-style: $border-style;
-  }
+}
 
 .light {
-    @include theme($light-theme:true)
+    @include theme($light-theme: false);
 }
